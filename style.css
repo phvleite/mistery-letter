@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script:wght@400;500;600;700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200;300;400;500;600;700&family=Pacifico&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Secular+One&family=Smooch&family=Ubuntu+Condensed&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Sans'; 
+    font-size: 16px;
+}
+body
+{
+    background: #7FB3D5;
+}
+main
+{
+    width: 980px;
+    margin: 30px auto;
+    padding: 60px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 50px;
+}
+section#escreve-carta
+{
+    width: 95%;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: #fff;
+}
+section#mostra-carta
+{
+    width: 95%;
+    padding: 20px 20px;
+    margin: 20px auto;
+    text-align: center;
+    background-color: #fff;
+}
+input#carta-texto
+{
+    width: 70%;
+    margin-right: 10px;
+    margin-left: 4px;
+    padding: 10px;
+}
+button#criar-carta
+{
+    width: 25%;
+    padding: 10px;
+}
+#carta-misteriosa
+{
+    width: 100%;
+    color: white;
+    text-align: center;
+    margin: 50px auto;
+}
+p#titulo
+{
+    font-size: 4em;
+    font-weight: 900;
+    font-family: 'Lobster', cursive;
+}
+.newspaper
+{
+    background-color: rgb(250,235,215);
+    font-family: 'Times New Roman';
+    font-weight: 700;
+    margin: 5px;
+}
+.magazine1
+{
+    background-color: rgb(0,128,128);
+    color: rgb(255,255,255);
+    font-family: 'Verdana';
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 5px;
+}
+.magazine2
+{
+    background-image: url(images/pink-pattern.png);
+    color: rgb(255,0,255);
+    font-family: 'Verdana';
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 5px;
+}
+.medium
+{
+    font-size: 20px;
+    padding: 8px;
+    margin: 5px;
+}
+.big
+{
+    font-size: 30px;
+    padding: 10px;
+    margin: 5px;
+}
+.reallybig
+{
+    font-size: 40px;
+    padding: 15px;
+    margin: 5px;
+}
+.rotateleft
+{
+    transform: matrix(0.996195, -0.0871557, 0.0871557, 0.996195, 0, 0);
+    margin: 5px;
+}
+.rotateright
+{
+    transform: matrix(0.996195, 0.0871557, -0.0871557, 0.996195, 0, 0);
+    margin: 5px;
+}
+.skewleft
+{
+    transform: matrix(1, 0, 0.176327, 1, 0, 0);
+    margin: 5px;
+}
+.skewright
+{
+    transform: matrix(1, 0, -0.176327, 1, 0, 0);
+    margin: 5px;
+}
