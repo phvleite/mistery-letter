@@ -32,6 +32,7 @@ section#mostra-carta
     margin: 20px auto;
     text-align: center;
     background-color: #fff;
+    display: flexbox;
 }
 input#carta-texto
 {
@@ -64,6 +65,7 @@ p#titulo
     font-family: 'Times New Roman';
     font-weight: 700;
     margin: 5px;
+    display:inline-block;
 }
 .magazine1
 {
@@ -73,6 +75,7 @@ p#titulo
     font-weight: 900;
     text-transform: uppercase;
     margin: 5px;
+    display:inline-block;
 }
 .magazine2
 {
@@ -82,42 +85,50 @@ p#titulo
     font-weight: 900;
     text-transform: uppercase;
     margin: 5px;
+    display:inline-block;
 }
 .medium
 {
     font-size: 20px;
     padding: 8px;
     margin: 5px;
+    display:inline-block;
 }
 .big
 {
     font-size: 30px;
     padding: 10px;
     margin: 5px;
+    display:inline-block;
 }
 .reallybig
 {
     font-size: 40px;
     padding: 15px;
     margin: 5px;
+    display:inline-block;
 }
 .rotateleft
 {
     transform: matrix(0.996195, -0.0871557, 0.0871557, 0.996195, 0, 0);
     margin: 5px;
+    display:inline-block;
 }
 .rotateright
 {
     transform: matrix(0.996195, 0.0871557, -0.0871557, 0.996195, 0, 0);
     margin: 5px;
+    display:inline-block;
 }
 .skewleft
 {
     transform: matrix(1, 0, 0.176327, 1, 0, 0);
     margin: 5px;
+    display:inline-block;
 }
 .skewright
 {
     transform: matrix(1, 0, -0.176327, 1, 0, 0);
     margin: 5px;
+    display:inline-block;
 }

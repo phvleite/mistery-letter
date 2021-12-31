@@ -16,6 +16,10 @@ function sorteio() {
   return (Math.random() * 9).toFixed(0);
 }
 
+function alterarClass(evento) {
+  evento.target.setAttribute('class', listaClasses[sorteio()]);
+}
+
 function gerarTexto(palavra) {
   console.log(sorteio());
   const texto = document.getElementById(cartaGerada);
@@ -23,6 +27,7 @@ function gerarTexto(palavra) {
   carta.innerText = palavra;
   carta.setAttribute('class', listaClasses[sorteio()]);
   texto.appendChild(carta);
+  carta.addEventListener('click', alterarClass);
 }
 
 function gerarCarta() {
