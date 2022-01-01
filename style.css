@@ -65,7 +65,7 @@ p#titulo
     font-family: 'Times New Roman';
     font-weight: 700;
     margin: 5px;
-    display:inline-block;
+    display: inline-block;    
 }
 .magazine1
 {
@@ -75,7 +75,7 @@ p#titulo
     font-weight: 900;
     text-transform: uppercase;
     margin: 5px;
-    display:inline-block;
+    display: inline-block;    
 }
 .magazine2
 {
@@ -85,50 +85,75 @@ p#titulo
     font-weight: 900;
     text-transform: uppercase;
     margin: 5px;
-    display:inline-block;
+    display: inline-block;    
 }
 .medium
 {
     font-size: 20px;
     padding: 8px;
     margin: 5px;
-    display:inline-block;
+    background-color: #00ffff;
+    color: #00008b;
+    display: inline-block;    
 }
 .big
 {
     font-size: 30px;
     padding: 10px;
     margin: 5px;
-    display:inline-block;
+    background-color: #00ff00;
+    color: #000000;
+    display: inline-block;    
 }
 .reallybig
 {
     font-size: 40px;
     padding: 15px;
     margin: 5px;
-    display:inline-block;
+    background-color: #daa520;
+    color: #d2691e;
+    font-weight: 900;
+    display: inline-block;    
 }
 .rotateleft
 {
     transform: matrix(0.996195, -0.0871557, 0.0871557, 0.996195, 0, 0);
     margin: 5px;
-    display:inline-block;
+    font-size: 2.5em;
+    background-color: #4b0082;
+    color: #fff;
+    padding: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;    
+    display: inline-block;    
 }
 .rotateright
 {
     transform: matrix(0.996195, 0.0871557, -0.0871557, 0.996195, 0, 0);
     margin: 5px;
-    display:inline-block;
+    font-size: 1.25em;
+    background-color: #4b0082;
+    color: #dda0dd;
+    font-weight: 900;
+    display: inline-block;    
 }
 .skewleft
 {
     transform: matrix(1, 0, 0.176327, 1, 0, 0);
     margin: 5px;
-    display:inline-block;
+    font-size: 3em;
+    background-color: #b22222;
+    color: #ffff00;
+    margin: 5px;
+    display: inline-block;    
 }
 .skewright
 {
     transform: matrix(1, 0, -0.176327, 1, 0, 0);
+    font-size: 1.5em;
+    background-color: #1c1c1c;
+    color: #ff00ff;
     margin: 5px;
-    display:inline-block;
+    display: inline-block;    
 }

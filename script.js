@@ -1,4 +1,5 @@
 const cartaGerada = 'carta-gerada';
+const cartaTexto = 'carta-texto';
 const listaClasses = [
   'newspaper',
   'magazine1',
@@ -6,8 +7,8 @@ const listaClasses = [
   'medium',
   'big',
   'reallybig',
-  'rotatoleft',
-  'rotatoright',
+  'rotateleft',
+  'rotateright',
   'skewleft',
   'skewright',
 ];
@@ -16,12 +17,12 @@ function sorteio() {
   return (Math.random() * 9).toFixed(0);
 }
 
-function alterarClass(evento) {
-  evento.target.setAttribute('class', listaClasses[sorteio()]);
+function alterarClass() {
+  const elementos = document.querySelectorAll('#carta-gerada>div');
+  console.log(elementos);
 }
 
 function gerarTexto(palavra) {
-  console.log(sorteio());
   const texto = document.getElementById(cartaGerada);
   const carta = document.createElement('span');
   carta.innerText = palavra;
@@ -31,9 +32,9 @@ function gerarTexto(palavra) {
 }
 
 function gerarCarta() {
-  const contCartaTexto = document.getElementById('carta-texto').value;
+  const contCartaTexto = document.getElementById(cartaTexto).value;
   if (contCartaTexto !== ' ' && contCartaTexto !== '') {
-    const cartaMisteriosa = document.getElementById('carta-texto').value.split(' ');
+    const cartaMisteriosa = document.getElementById(cartaTexto).value.split(' ');
     cartaMisteriosa.forEach((palavra) => gerarTexto(palavra));
     return;
   }
