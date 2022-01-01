@@ -1,3 +1,4 @@
+let cartaContador = 0;
 const cartaGerada = 'carta-gerada';
 const cartaTexto = 'carta-texto';
 const listaClasses = [
@@ -17,10 +18,16 @@ function sorteio() {
   return (Math.random() * 9).toFixed(0);
 }
 
-function alterarClass() {
-  const elementos = document.querySelectorAll('#carta-gerada>div');
-  console.log(elementos);
+function alterarClass2(evento) {
+  evento.target.className = listaClasses[sorteio()];
 }
+
+/* function alterarClass() {
+  const elementos = document.getElementsByTagName('span');
+  for (let i = 0; i < elementos.length; i += 1) {
+    elementos[i].className = listaClasses[sorteio()];
+  }
+} */
 
 function gerarTexto(palavra) {
   const texto = document.getElementById(cartaGerada);
@@ -28,10 +35,14 @@ function gerarTexto(palavra) {
   carta.innerText = palavra;
   carta.setAttribute('class', listaClasses[sorteio()]);
   texto.appendChild(carta);
-  carta.addEventListener('click', alterarClass);
+  carta.addEventListener('click', alterarClass2);
+  cartaContador += 1;
+  document.getElementById('carta-contador').innerText = cartaContador;
 }
 
 function gerarCarta() {
+  cartaContador = 0;
+  document.getElementById('carta-contador').innerText = cartaContador;
   const contCartaTexto = document.getElementById(cartaTexto).value;
   if (contCartaTexto !== ' ' && contCartaTexto !== '') {
     const cartaMisteriosa = document.getElementById(cartaTexto).value.split(' ');
