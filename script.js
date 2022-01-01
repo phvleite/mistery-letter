@@ -19,7 +19,8 @@ function sorteio() {
 }
 
 function alterarClass2(evento) {
-  evento.target.className = listaClasses[sorteio()];
+  const ev = evento;
+  ev.target.className = listaClasses[sorteio()];
 }
 
 /* function alterarClass() {
