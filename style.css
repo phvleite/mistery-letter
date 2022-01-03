@@ -34,6 +34,25 @@ section#mostra-carta
     background-color: #fff;
     display: flexbox;
 }
+section#contador
+{
+    width: 95%;
+    padding: 10px;
+    margin: 20px auto;
+    text-align: left;
+    background-color: #fff;
+    display: flexbox;
+}
+
+#texto-contador, #carta-contador
+{
+    font-size: 0.8em;
+    display: inline-block;
+    flex-direction: row;
+    width: 110px;
+    padding: 0px;
+}
+
 input#carta-texto
 {
     width: 70%;
@@ -59,12 +78,12 @@ p#titulo
     font-weight: 900;
     font-family: 'Lobster', cursive;
 }
+/* Classes Estilos */
 .newspaper
 {
-    background-color: rgb(250,235,215);
+    background-color:antiquewhite;
     font-family: 'Times New Roman';
     font-weight: 700;
-    margin: 5px;
     display: inline-block;    
 }
 .magazine1
@@ -74,7 +93,6 @@ p#titulo
     font-family: 'Verdana';
     font-weight: 900;
     text-transform: uppercase;
-    margin: 5px;
     display: inline-block;    
 }
 .magazine2
@@ -84,76 +102,39 @@ p#titulo
     font-family: 'Verdana';
     font-weight: 900;
     text-transform: uppercase;
-    margin: 5px;
     display: inline-block;    
 }
+/* Classes tamanho */
 .medium
 {
     font-size: 20px;
     padding: 8px;
-    margin: 5px;
-    background-color: #00ffff;
-    color: #00008b;
-    display: inline-block;    
 }
 .big
 {
     font-size: 30px;
     padding: 10px;
-    margin: 5px;
-    background-color: #00ff00;
-    color: #000000;
-    display: inline-block;    
 }
 .reallybig
 {
     font-size: 40px;
     padding: 15px;
-    margin: 5px;
-    background-color: #daa520;
-    color: #d2691e;
-    font-weight: 900;
-    display: inline-block;    
 }
+/* Classes rotação */
 .rotateleft
 {
-    transform: matrix(0.996195, -0.0871557, 0.0871557, 0.996195, 0, 0);
-    margin: 5px;
-    font-size: 2.5em;
-    background-color: #4b0082;
-    color: #fff;
-    padding: 20px;
-    font-weight: 600;
-    text-transform: uppercase;
-    display: inline-block;    
-    display: inline-block;    
+    transform: rotate(-5deg);
 }
 .rotateright
 {
-    transform: matrix(0.996195, 0.0871557, -0.0871557, 0.996195, 0, 0);
-    margin: 5px;
-    font-size: 1.25em;
-    background-color: #4b0082;
-    color: #dda0dd;
-    font-weight: 900;
-    display: inline-block;    
+    transform: rotate(5deg);
 }
+/* Classes inclinação */
 .skewleft
 {
-    transform: matrix(1, 0, 0.176327, 1, 0, 0);
-    margin: 5px;
-    font-size: 3em;
-    background-color: #b22222;
-    color: #ffff00;
-    margin: 5px;
-    display: inline-block;    
+    transform: skewX(10deg);
 }
 .skewright
 {
-    transform: matrix(1, 0, -0.176327, 1, 0, 0);
-    font-size: 1.5em;
-    background-color: #1c1c1c;
-    color: #ff00ff;
-    margin: 5px;
-    display: inline-block;    
+    transform: skewX(-10deg);
 }

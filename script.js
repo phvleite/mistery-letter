@@ -1,7 +1,7 @@
 let cartaContador = 0;
 const cartaGerada = 'carta-gerada';
 const cartaTexto = 'carta-texto';
-const listaClasses = [
+const classesLista = [
   'newspaper',
   'magazine1',
   'magazine2',
@@ -14,29 +14,52 @@ const listaClasses = [
   'skewright',
 ];
 
-function sorteio() {
-  return (Math.random() * 9).toFixed(0);
+const classesEstilo = [
+  'newspaper',
+  'magazine1',
+  'magazine2',
+];
+
+const classesTamanho = [
+  'medium',
+  'big',
+  'reallybig',
+];
+
+const classesRotacao = [
+  'rotateleft',
+  'rotateright',
+];
+
+const ClassesInclinacao = [
+  'skewleft',
+  'skewright',
+];
+
+function sorteio(qtd) {
+  return (Math.random() * qtd).toFixed(0);
 }
 
-function alterarClass2(evento) {
+function alterarClass(evento) {
   const ev = evento;
-  ev.target.className = listaClasses[sorteio()];
+  ev.target.classList.value = '';
+  ev.target.classList.add(classesEstilo[sorteio(2)]);
+  ev.target.classList.add(classesTamanho[sorteio(2)]);
+  ev.target.classList.add(classesRotacao[sorteio(1)]);
+  ev.target.classList.add(ClassesInclinacao[sorteio(1)]);
 }
-
-/* function alterarClass() {
-  const elementos = document.getElementsByTagName('span');
-  for (let i = 0; i < elementos.length; i += 1) {
-    elementos[i].className = listaClasses[sorteio()];
-  }
-} */
 
 function gerarTexto(palavra) {
   const texto = document.getElementById(cartaGerada);
   const carta = document.createElement('span');
   carta.innerText = palavra;
-  carta.setAttribute('class', listaClasses[sorteio()]);
+  carta.classList.add(classesEstilo[sorteio(2)]);
+  carta.classList.add(classesTamanho[sorteio(2)]);
+  carta.classList.add(classesRotacao[sorteio(1)]);
+  carta.classList.add(ClassesInclinacao[sorteio(1)]);
+  // carta.classList.add(classesLista[sorteio(9)]);
   texto.appendChild(carta);
-  carta.addEventListener('click', alterarClass2);
+  carta.addEventListener('click', alterarClass);
   cartaContador += 1;
   document.getElementById('carta-contador').innerText = cartaContador;
 }
