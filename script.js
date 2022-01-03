@@ -1,18 +1,6 @@
 let cartaContador = 0;
 const cartaGerada = 'carta-gerada';
 const cartaTexto = 'carta-texto';
-const classesLista = [
-  'newspaper',
-  'magazine1',
-  'magazine2',
-  'medium',
-  'big',
-  'reallybig',
-  'rotateleft',
-  'rotateright',
-  'skewleft',
-  'skewright',
-];
 
 const classesEstilo = [
   'newspaper',
@@ -57,7 +45,6 @@ function gerarTexto(palavra) {
   carta.classList.add(classesTamanho[sorteio(2)]);
   carta.classList.add(classesRotacao[sorteio(1)]);
   carta.classList.add(ClassesInclinacao[sorteio(1)]);
-  // carta.classList.add(classesLista[sorteio(9)]);
   texto.appendChild(carta);
   carta.addEventListener('click', alterarClass);
   cartaContador += 1;
